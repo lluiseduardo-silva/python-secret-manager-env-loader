@@ -1,12 +1,25 @@
+# Ambiente virtual e IDE
 .venv
 .idea
+
+# Cobertura e relatórios
 .coverage
 htmlcov
-sonar-plugins
-bandit-report.json
 coverage.xml
+bandit-report.json
 flake8-report.json
 mypy-report.xml
 pylint-report.json
 ruff-report.json
-src/aws_secrets_env.egg-info
+
+# SonarQube
+sonar-plugins
+
+# Build e metadados
+*.egg-info/
+dist/
+build/
+
+# Cache Python
+__pycache__/
+*.pyc

@@ -1,6 +1,8 @@
 # Variável do token (recomendo usar variável de ambiente segura)
 $env:SONAR_TOKEN = $env:SQTOKEN
 
+pip install -e .[dev,security]
+
 # 1. Testes com cobertura
 pytest --cov=aws_secrets_env --cov-report=xml
 
